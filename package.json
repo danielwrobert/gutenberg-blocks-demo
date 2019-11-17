@@ -1,0 +1,32 @@
+{
+  "name": "a8c-mktg-blocks",
+  "version": "1.0.0",
+  "description": "Custom WPCOM Marketing blocks for Landing Pages and various projects.",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "start": "wp-scripts start",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  },
+  "keywords": [
+    "Gutenberg",
+    "Block",
+    "Editor",
+    "WordPress",
+    "WordPress.com",
+    "Marketing",
+    "JavaScript",
+    "React"
+  ],
+  "author": "Automattic, Inc.",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@wordpress/scripts": "^5.1.0"
+  }
+}
