@@ -8,8 +8,8 @@ const blockStyle = {
 	padding: '20px',
 };
 
-registerBlockType( 'a8c-mktg-blocks/bullet', {
-	title: __( 'Bullet', 'a8c-mktg-blocks' ),
+registerBlockType( 'mktg-blocks-demo/bullet', {
+	title: __( 'Bullet', 'mktg-blocks-demo' ),
 	icon: 'universal-access-alt',
 	category: 'layout',
 	edit() {
