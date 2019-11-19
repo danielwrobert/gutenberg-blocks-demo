@@ -12,7 +12,9 @@
     "lint:pkg-json": "wp-scripts lint-pkg-json",
     "start": "wp-scripts start",
     "test:e2e": "wp-scripts test-e2e",
-    "test:unit": "wp-scripts test-unit-js"
+    "test:unit": "wp-scripts test-unit-js",
+    "env:start": "docker-compose up -d",
+    "env:stop": "docker-compose stop"
   },
   "keywords": [
     "Gutenberg",
