@@ -11,7 +11,7 @@ The quickest way to get up and running is to use the provided docker setup. Inst
 In the folder of your preference, clone this project and enter the working directory:
 
 ```
-git clone git@github.com:WordPress/gutenberg-examples.git
+git clone git@github.com:danielwrobert/mktg-blocks-demo.git
 cd mktg-blocks-demo
 ```
 
@@ -31,9 +31,15 @@ docker-compose stop
 
 Alternatively, you can look into solutions like [Laravel Valet](https://laravel.com/docs/5.6/valet#valet-or-homestead), [VVV](https://varyingvagrantvagrants.org/),[MAMP](https://www.mamp.info/en/), or [Local by Flywheel](https://localbyflywheel.com/).
 
-_NOTE: If you set up you environment with one of the alternative approaches (not Docker), you will need to clone this project in the Plugins directory._
+_NOTE: If you set up you environment with one of the alternative approaches (not Docker), you will need to clone this project in the Plugins directory and enter the repo directory:_
 
-Once you have your WordPress environment up and running, the following commands are required to build the plugins:
+```
+cd wp-content/plugins
+git clone git@github.com:danielwrobert/mktg-blocks-demo.git
+cd mktg-blocks-demo
+```
+
+Once you have your everything installed and running, the following commands are required to build the plugins:
 
 To install the node packages
 ```
