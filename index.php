@@ -69,3 +69,19 @@ function gutenberg_blocks_demo_register_block() {
 
 }
 add_action( 'init', 'gutenberg_blocks_demo_register_block' );
+
+/**
+ * Sets containing category for blocks in admin editor
+ */
+function gutenberg_blocks_demo_category( $categories, $post ) {
+	return array_merge(
+		$categories,
+		array(
+			array(
+				'slug'  => 'custom-blocks',
+				'title' => esc_html__( 'Custom Blocks', 'gutenberg-blocks-demo' ),
+			),
+		)
+	);
+}
+add_filter( 'block_categories', 'gutenberg_blocks_demo_category', 10, 2 );
