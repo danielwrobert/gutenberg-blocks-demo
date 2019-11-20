@@ -56,4 +56,9 @@ To build a development version
 npm start
 ```
 
+## References/Resources
+
+- Official Gutenberg Examples Repo ([#](https://github.com/WordPress/gutenberg-examples))
+- Zac Gordon's @wordpress/scripts Demo Repo ([#](https://github.com/zgordon/wordpress-scripts-demo))
+
 <br/><br/><p align="center"><img src="https://s.w.org/style/images/codeispoetry.png?1" alt="Code is Poetry." /></p>
