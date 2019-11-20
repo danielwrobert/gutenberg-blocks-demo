@@ -1,4 +1,4 @@
-# Markteing Blocks Demo
+# Gutenberg Blocks Demo
 
 A small demo to get started with Gutenberg block development.
 
