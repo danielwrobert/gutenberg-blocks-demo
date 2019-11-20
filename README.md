@@ -11,8 +11,8 @@ The quickest way to get up and running is to use the provided docker setup. Inst
 In the folder of your preference, clone this project and enter the working directory:
 
 ```
-git clone git@github.com:danielwrobert/mktg-blocks-demo.git
-cd mktg-blocks-demo
+git clone git@github.com:danielwrobert/gutenberg-blocks-demo.git
+cd gutenberg-blocks-demo
 ```
 
 To bring up this local WordPress instance run:
@@ -35,8 +35,8 @@ _NOTE: If you set up you environment with one of the alternative approaches (not
 
 ```
 cd wp-content/plugins
-git clone git@github.com:danielwrobert/mktg-blocks-demo.git
-cd mktg-blocks-demo
+git clone git@github.com:danielwrobert/gutenberg-blocks-demo.git
+cd gutenberg-blocks-demo
 ```
 
 Once you have your everything installed and running, the following commands are required to build the plugins:

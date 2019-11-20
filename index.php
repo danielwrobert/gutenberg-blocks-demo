@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Plugin Name: Marketing Blocks Demo
- * Plugin URI: https://github.com/Automattic/mktg-blocks
- * Description: This is a demo plugin that can be used as a starting point for all of the custom Marketing blocks for the A8C Marketing Acquisition team.
+ * Plugin Name: Gutenberg Blocks Demo
+ * Plugin URI: https://github.com/danielwrobert/gutenberg-blocks-demo
+ * Description: This is a demo plugin that can be used as a starting point for a single plugin that contains multiple blocks.
  * Version: 1.1.0
- * Author: Automattic
+ * Author: Dan Robert
  *
- * @package mktg-blocks-demo
+ * @package gutenberg-blocks-demo
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -15,10 +15,10 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Load all translations for our plugin from the MO file.
 */
-function mktg_blocks_demo_load_textdomain() {
-	load_plugin_textdomain( 'mktg-blocks-demo', false, basename( __DIR__ ) . '/languages' );
+function gutenberg_blocks_demo_load_textdomain() {
+	load_plugin_textdomain( 'gutenberg-blocks-demo', false, basename( __DIR__ ) . '/languages' );
 }
-add_action( 'init', 'mktg_blocks_demo_load_textdomain' );
+add_action( 'init', 'gutenberg_blocks_demo_load_textdomain' );
 
 /**
  * Registers all block assets so that they can be enqueued through Gutenberg in
@@ -26,7 +26,7 @@ add_action( 'init', 'mktg_blocks_demo_load_textdomain' );
  *
  * Passes translations to JavaScript.
  */
-function mktg_blocks_demo_register_block() {
+function gutenberg_blocks_demo_register_block() {
 
 	// Fail if block editor is not supported
 	if ( ! function_exists( 'register_block_type' ) ) {
@@ -37,7 +37,7 @@ function mktg_blocks_demo_register_block() {
 	$asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php');
 
 	wp_register_script(
-		'mktg-blocks-demo',
+		'gutenberg-blocks-demo',
 		plugins_url( 'build/index.js', __FILE__ ),
 		$asset_file['dependencies'],
 		$asset_file['version']
@@ -51,9 +51,9 @@ function mktg_blocks_demo_register_block() {
 	// Register each block with same CSS and JS
 	foreach ( $blocks as $block ) {
 		register_block_type(
-			'mktg-blocks-demo/' . $block,
+			'gutenberg-blocks-demo/' . $block,
 			[
-				'editor_script' => 'mktg-blocks-demo',
+				'editor_script' => 'gutenberg-blocks-demo',
 			]
 		);
 
@@ -63,9 +63,9 @@ function mktg_blocks_demo_register_block() {
 			 * plugin_dir_path( MY_PLUGIN ) . 'languages' ) ). For details see
 			 * https://make.wordpress.org/core/2018/11/09/new-javascript-i18n-support-in-wordpress/
 			 */
-			wp_set_script_translations( $block, 'mktg-blocks-demo' );
+			wp_set_script_translations( $block, 'gutenberg-blocks-demo' );
 		}
 	}
 
 }
-add_action( 'init', 'mktg_blocks_demo_register_block' );
+add_action( 'init', 'gutenberg_blocks_demo_register_block' );

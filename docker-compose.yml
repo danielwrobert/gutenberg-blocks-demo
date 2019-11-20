@@ -9,7 +9,7 @@ services:
     environment:
       WORDPRESS_DB_PASSWORD: example
     volumes:
-      - ./:/var/www/html/wp-content/plugins/mktg-blocks-demo
+      - ./:/var/www/html/wp-content/plugins/gutenberg-blocks-demo
 
   mysql:
     image: mysql:5.7

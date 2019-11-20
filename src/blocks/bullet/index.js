@@ -8,8 +8,8 @@ const blockStyle = {
 	padding: '20px',
 };
 
-registerBlockType( 'mktg-blocks-demo/bullet', {
-	title: __( 'Bullet', 'mktg-blocks-demo' ),
+registerBlockType( 'gutenberg-blocks-demo/bullet', {
+	title: __( 'Bullet', 'gutenberg-blocks-demo' ),
 	icon: 'universal-access-alt',
 	category: 'layout',
 	edit() {
