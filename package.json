@@ -29,6 +29,7 @@
   "author": "Automattic, Inc.",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
-    "@wordpress/scripts": "^5.1.0"
+    "@wordpress/components": "^8.5.0",
+    "@wordpress/scripts": "^6.1.1"
   }
 }

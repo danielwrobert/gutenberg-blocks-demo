@@ -85,3 +85,4 @@ function gutenberg_blocks_demo_category( $categories, $post ) {
 	);
 }
 add_filter( 'block_categories', 'gutenberg_blocks_demo_category', 10, 2 );
+
