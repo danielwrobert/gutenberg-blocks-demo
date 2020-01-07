@@ -34,7 +34,7 @@ function gutenberg_blocks_demo_register_block() {
 	}
 
 	// automatically load dependencies and version
-	$asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php');
+	$asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php' );
 
 	wp_register_script(
 		'gutenberg-blocks-demo',
