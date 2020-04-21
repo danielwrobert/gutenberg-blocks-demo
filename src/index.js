@@ -1,4 +1,4 @@
 /**
  * Import individual blocks
  */
-import "./blocks/bullet";
+import "./blocks/demo";

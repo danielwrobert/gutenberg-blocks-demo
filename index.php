@@ -45,7 +45,7 @@ function gutenberg_blocks_demo_register_block() {
 
 	// List all of the blocks for your plugin
 	$blocks = [
-		'bullet',
+		'demo',
 	];
 
 	// Register each block with same CSS and JS

@@ -8,8 +8,8 @@ const blockStyle = {
 	padding: '20px',
 };
 
-registerBlockType( 'gutenberg-blocks-demo/bullet', {
-	title: __( 'Bullet', 'gutenberg-blocks-demo' ),
+registerBlockType( 'gutenberg-blocks-demo/demo', {
+	title: __( 'Demo', 'gutenberg-blocks-demo' ),
 	icon: 'universal-access-alt',
 	category: 'custom-blocks',
 	edit() {
@@ -21,13 +21,13 @@ registerBlockType( 'gutenberg-blocks-demo/bullet', {
 			>
 				Upload
 			</FormFileUpload>
-			<div className="bullet-block" style={ blockStyle }>Hello World! Here is a static block (from the editor).</div>
+			<div className="demo-block" style={ blockStyle }>Hello World! Here is a static block (from the editor).</div>
 			</>
 		);
 	},
 	save() {
 		return (
-			<div className="bullet-block" style={ blockStyle }>Hello World! Here is a static block (from the frontend).</div>
+			<div className="demo-block" style={ blockStyle }>Hello World! Here is a static block (from the frontend).</div>
 		);
 	},
 } );
